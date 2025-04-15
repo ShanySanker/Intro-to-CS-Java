@@ -1,2 +1,4 @@
 # Intro-to-CS-Java
-Hw written for the Open-university course 20441 in 2025B
+Hw written for The Open University course 20441 in 2025B
+
+11 - Basics of Java - grade 100
