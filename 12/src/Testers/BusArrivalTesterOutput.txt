@@ -1,0 +1,101 @@
+********** Test BusArrival - Started **********
+
+
+1. Testing Constructors and toString:
+
+	1. Testing Constructor with 5 parameters BusArrival(int lineNum, int pass, int h, int m, int s):
+	BusArrival ba1 is: (should be: Bus no. 18 arrived at 10:25:40 with 3 passengers)
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+
+	2. Testing Constructor with 3 parameters BusArrival(int lineNum, int pass, Time1 t):
+	BusArrival ba2 is: (should be: Bus no. 9 arrived at 12:30:55 with 15 passengers)
+	Bus no. 9 arrived at 12:30:55 with 15 passengers
+
+	3. Testing Copy Constructor parameters BusArrival(BusArrival other):
+	BusArrival ba2 (constructed using ba1) is: (should be: Bus no. 18 arrived at 10:25:40 with 3 passengers)
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+
+
+2.1. Testing accessors (getters):
+
+	BusArrival ba1 is:
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+
+	1. Testing getLineNum():
+	line number is :18 (should be 18)
+
+	2. Testing getNoOfPass():
+	number of passengers is :3 (should be 3)
+
+	3. Testing getArrivalTime():
+	arrival time is:10:25:40 (should be: 10:25:40)
+
+
+2.2. Testing mutators (setters):
+
+	BusArrival ba1 is:
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+
+	1. Testing setLineNum(int num):
+	line number is : 25 (was 18, but now should be 25)
+
+	2. Testing setNoOfPass(int num):
+	number of passengers is : 14 (was 3, but now should be 14)
+
+	3. Testing setArrivalTime(Time1 t):
+	arrival time is : 16:15:20 (was 10:25:40, but now should be: 16:15:20)
+
+
+3. Testing equals() method:
+
+	BusArrival ba1 is:
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+
+	BusArrival ba2 is:
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+
+	Test results:
+	Passed: bas1 is the same BusArrival as ba2
+
+
+4. Testing fuller() method:
+
+	BusArrival ba1 is:
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+
+	BusArrival ba2 is:
+	Bus no. 28 arrived at 10:40:45 with 13 passengers
+
+	Test results:
+	Passed: ba2 (13 passengers) is fuller than ba1 (3 passengers)
+
+
+5. Testing before() method:
+
+	BusArrival ba1 is:
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+
+	BusArrival ba2 is:
+	Bus no. 28 arrived at 10:40:45 with 13 passengers
+
+	Test results:
+	Passed: ba1 arrival time (10:25:40) is before ba2 arrival time (10:40:45)
+
+
+6. Testing isFull() method:
+
+	BusArrival ba1 is:
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+	Passed: ba1 (3 passengers) is NOT full
+
+
+7. Testing elapsedTime() method:
+
+	BusArrival ba1 is:
+	Bus no. 18 arrived at 10:25:40 with 3 passengers
+
+	BusArrival ba2 is:
+	Bus no. 28 arrived at 10:40:45 with 13 passengers
+
+	Test results:
+	PASSED: ba1.elapsedTime(b2) == 15

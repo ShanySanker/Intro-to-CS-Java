@@ -1,0 +1,99 @@
+********** Test Time2 - Started **********
+
+
+1. Testing Constructors and toString:
+
+	1. Testing Constructor with 3 parameters Time2(int h, int m, int s):
+	Time2 t1 is: (should be: 10:25:40)
+	10:25:40
+
+	2. Testing Copy Constructor Time2(Time2 other):
+	Time2 t2 (constructed using t1) is: (should be 10:25:40)
+	10:25:40
+
+
+2.1. Testing accessors (getters):
+
+	Time2 t1 is:
+	10:25:40
+
+	1. Testing getHour():
+	student result is : 10 (should be 10)
+
+	2. Testing getMinutes():
+	student result is : 25 (should be 25)
+
+	3. Testing getSeconds():
+	student result is : 40 (should be 40)
+
+
+2.2. Testing mutators (setters):
+
+	Time2 t1 is:
+	10:25:40
+
+	1. Testing setHour(int num):
+	hour after set is : 12 (was 10, but now should be 12)
+
+	2. Testing setMinute(int num):
+	minute after set is : 14 (was 25, but now should be 14)
+
+	3. Testing setSecond(int num):
+	second after set is : 35 (was 40, but now should be 35)
+
+
+3. Testing secFromMidnight() method:
+
+	Time2 t1 is:
+	10:25:40
+
+	Test results:
+	Passed: t1 (10:25:40) secoFromMidnight() return 37540
+
+
+4. Testing equals() method:
+
+	Time2 t1 is:
+	10:25:40
+
+	Time2 t2 is:
+	10:25:40
+
+	Test results (t1.equals(t2)):
+	Passed: Time t1 is the same Time2 as t2
+
+
+5. Testing before() method:
+
+	Time2 t1 is:
+	10:25:40
+
+	Time2 t2 is:
+	10:40:45
+
+	Test results: (t1.before(t2))
+	Passed: Time2 t1 (10:25:40) is before Time2 t2 (10:40:45)
+
+
+6. Testing after() method:
+
+	Time2 t1 is:
+	10:25:40
+
+	Time2 t2 is:
+	10:40:45
+
+	Test results (t2.after(t1)):
+	Passed: Time2 t2 (10:40:45) is after Time2 t1 (10:25:40)
+
+
+7. Testing difference() method:
+
+	Time2 t1 is:
+	10:25:40
+
+	Time2 t2 is:
+	10:40:45
+
+	Test results (t2.difference(t1)):
+	Passed: t2.difference(t1) returned 905
